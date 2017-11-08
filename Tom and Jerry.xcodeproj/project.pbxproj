@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1877C6591FB2BB0800E8504A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6581FB2BB0800E8504A /* AppDelegate.swift */; };
+		1877C65B1FB2BB0800E8504A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C65A1FB2BB0800E8504A /* ViewController.swift */; };
+		1877C65E1FB2BB0800E8504A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1877C65C1FB2BB0800E8504A /* Main.storyboard */; };
+		1877C6601FB2BB0800E8504A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1877C65F1FB2BB0800E8504A /* Assets.xcassets */; };
+		1877C6631FB2BB0800E8504A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1877C6611FB2BB0800E8504A /* LaunchScreen.storyboard */; };
+		1877C66E1FB2BB0800E8504A /* Tom_and_JerryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C66D1FB2BB0800E8504A /* Tom_and_JerryTests.swift */; };
+		1877C6791FB2BB0800E8504A /* Tom_and_JerryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6781FB2BB0800E8504A /* Tom_and_JerryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1877C66A1FB2BB0800E8504A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1877C64D1FB2BB0800E8504A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1877C6541FB2BB0800E8504A;
+			remoteInfo = "Tom and Jerry";
+		};
+		1877C6751FB2BB0800E8504A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1877C64D1FB2BB0800E8504A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1877C6541FB2BB0800E8504A;
+			remoteInfo = "Tom and Jerry";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1877C6551FB2BB0800E8504A /* Tom and Jerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tom and Jerry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1877C6581FB2BB0800E8504A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1877C65A1FB2BB0800E8504A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1877C65D1FB2BB0800E8504A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1877C65F1FB2BB0800E8504A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1877C6621FB2BB0800E8504A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1877C6641FB2BB0800E8504A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1877C6691FB2BB0800E8504A /* Tom and JerryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tom and JerryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1877C66D1FB2BB0800E8504A /* Tom_and_JerryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tom_and_JerryTests.swift; sourceTree = "<group>"; };
+		1877C66F1FB2BB0800E8504A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1877C6741FB2BB0800E8504A /* Tom and JerryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tom and JerryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1877C6781FB2BB0800E8504A /* Tom_and_JerryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tom_and_JerryUITests.swift; sourceTree = "<group>"; };
+		1877C67A1FB2BB0800E8504A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1877C6521FB2BB0800E8504A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1877C6661FB2BB0800E8504A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1877C6711FB2BB0800E8504A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1877C64C1FB2BB0800E8504A = {
+			isa = PBXGroup;
+			children = (
+				1877C6571FB2BB0800E8504A /* Tom and Jerry */,
+				1877C66C1FB2BB0800E8504A /* Tom and JerryTests */,
+				1877C6771FB2BB0800E8504A /* Tom and JerryUITests */,
+				1877C6561FB2BB0800E8504A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1877C6561FB2BB0800E8504A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1877C6551FB2BB0800E8504A /* Tom and Jerry.app */,
+				1877C6691FB2BB0800E8504A /* Tom and JerryTests.xctest */,
+				1877C6741FB2BB0800E8504A /* Tom and JerryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1877C6571FB2BB0800E8504A /* Tom and Jerry */ = {
+			isa = PBXGroup;
+			children = (
+				1877C6581FB2BB0800E8504A /* AppDelegate.swift */,
+				1877C65A1FB2BB0800E8504A /* ViewController.swift */,
+				1877C65C1FB2BB0800E8504A /* Main.storyboard */,
+				1877C65F1FB2BB0800E8504A /* Assets.xcassets */,
+				1877C6611FB2BB0800E8504A /* LaunchScreen.storyboard */,
+				1877C6641FB2BB0800E8504A /* Info.plist */,
+			);
+			path = "Tom and Jerry";
+			sourceTree = "<group>";
+		};
+		1877C66C1FB2BB0800E8504A /* Tom and JerryTests */ = {
+			isa = PBXGroup;
+			children = (
+				1877C66D1FB2BB0800E8504A /* Tom_and_JerryTests.swift */,
+				1877C66F1FB2BB0800E8504A /* Info.plist */,
+			);
+			path = "Tom and JerryTests";
+			sourceTree = "<group>";
+		};
+		1877C6771FB2BB0800E8504A /* Tom and JerryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1877C6781FB2BB0800E8504A /* Tom_and_JerryUITests.swift */,
+				1877C67A1FB2BB0800E8504A /* Info.plist */,
+			);
+			path = "Tom and JerryUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1877C6541FB2BB0800E8504A /* Tom and Jerry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1877C67D1FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and Jerry" */;
+			buildPhases = (
+				1877C6511FB2BB0800E8504A /* Sources */,
+				1877C6521FB2BB0800E8504A /* Frameworks */,
+				1877C6531FB2BB0800E8504A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tom and Jerry";
+			productName = "Tom and Jerry";
+			productReference = 1877C6551FB2BB0800E8504A /* Tom and Jerry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1877C6681FB2BB0800E8504A /* Tom and JerryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1877C6801FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and JerryTests" */;
+			buildPhases = (
+				1877C6651FB2BB0800E8504A /* Sources */,
+				1877C6661FB2BB0800E8504A /* Frameworks */,
+				1877C6671FB2BB0800E8504A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1877C66B1FB2BB0800E8504A /* PBXTargetDependency */,
+			);
+			name = "Tom and JerryTests";
+			productName = "Tom and JerryTests";
+			productReference = 1877C6691FB2BB0800E8504A /* Tom and JerryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1877C6731FB2BB0800E8504A /* Tom and JerryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1877C6831FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and JerryUITests" */;
+			buildPhases = (
+				1877C6701FB2BB0800E8504A /* Sources */,
+				1877C6711FB2BB0800E8504A /* Frameworks */,
+				1877C6721FB2BB0800E8504A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1877C6761FB2BB0800E8504A /* PBXTargetDependency */,
+			);
+			name = "Tom and JerryUITests";
+			productName = "Tom and JerryUITests";
+			productReference = 1877C6741FB2BB0800E8504A /* Tom and JerryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1877C64D1FB2BB0800E8504A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					1877C6541FB2BB0800E8504A = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					1877C6681FB2BB0800E8504A = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1877C6541FB2BB0800E8504A;
+					};
+					1877C6731FB2BB0800E8504A = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1877C6541FB2BB0800E8504A;
+					};
+				};
+			};
+			buildConfigurationList = 1877C6501FB2BB0800E8504A /* Build configuration list for PBXProject "Tom and Jerry" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1877C64C1FB2BB0800E8504A;
+			productRefGroup = 1877C6561FB2BB0800E8504A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1877C6541FB2BB0800E8504A /* Tom and Jerry */,
+				1877C6681FB2BB0800E8504A /* Tom and JerryTests */,
+				1877C6731FB2BB0800E8504A /* Tom and JerryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1877C6531FB2BB0800E8504A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1877C6631FB2BB0800E8504A /* LaunchScreen.storyboard in Resources */,
+				1877C6601FB2BB0800E8504A /* Assets.xcassets in Resources */,
+				1877C65E1FB2BB0800E8504A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1877C6671FB2BB0800E8504A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1877C6721FB2BB0800E8504A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1877C6511FB2BB0800E8504A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1877C65B1FB2BB0800E8504A /* ViewController.swift in Sources */,
+				1877C6591FB2BB0800E8504A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1877C6651FB2BB0800E8504A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1877C66E1FB2BB0800E8504A /* Tom_and_JerryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1877C6701FB2BB0800E8504A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1877C6791FB2BB0800E8504A /* Tom_and_JerryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1877C66B1FB2BB0800E8504A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1877C6541FB2BB0800E8504A /* Tom and Jerry */;
+			targetProxy = 1877C66A1FB2BB0800E8504A /* PBXContainerItemProxy */;
+		};
+		1877C6761FB2BB0800E8504A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1877C6541FB2BB0800E8504A /* Tom and Jerry */;
+			targetProxy = 1877C6751FB2BB0800E8504A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1877C65C1FB2BB0800E8504A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1877C65D1FB2BB0800E8504A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1877C6611FB2BB0800E8504A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1877C6621FB2BB0800E8504A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1877C67B1FB2BB0800E8504A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1877C67C1FB2BB0800E8504A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1877C67E1FB2BB0800E8504A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q24729YL82;
+				INFOPLIST_FILE = "Tom and Jerry/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SophiaSun.Tom-and-Jerry";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1877C67F1FB2BB0800E8504A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q24729YL82;
+				INFOPLIST_FILE = "Tom and Jerry/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SophiaSun.Tom-and-Jerry";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1877C6811FB2BB0800E8504A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q24729YL82;
+				INFOPLIST_FILE = "Tom and JerryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SophiaSun.Tom-and-JerryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tom and Jerry.app/Tom and Jerry";
+			};
+			name = Debug;
+		};
+		1877C6821FB2BB0800E8504A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q24729YL82;
+				INFOPLIST_FILE = "Tom and JerryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SophiaSun.Tom-and-JerryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tom and Jerry.app/Tom and Jerry";
+			};
+			name = Release;
+		};
+		1877C6841FB2BB0800E8504A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q24729YL82;
+				INFOPLIST_FILE = "Tom and JerryUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SophiaSun.Tom-and-JerryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tom and Jerry";
+			};
+			name = Debug;
+		};
+		1877C6851FB2BB0800E8504A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q24729YL82;
+				INFOPLIST_FILE = "Tom and JerryUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SophiaSun.Tom-and-JerryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tom and Jerry";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1877C6501FB2BB0800E8504A /* Build configuration list for PBXProject "Tom and Jerry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1877C67B1FB2BB0800E8504A /* Debug */,
+				1877C67C1FB2BB0800E8504A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1877C67D1FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and Jerry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1877C67E1FB2BB0800E8504A /* Debug */,
+				1877C67F1FB2BB0800E8504A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1877C6801FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and JerryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1877C6811FB2BB0800E8504A /* Debug */,
+				1877C6821FB2BB0800E8504A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1877C6831FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and JerryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1877C6841FB2BB0800E8504A /* Debug */,
+				1877C6851FB2BB0800E8504A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1877C64D1FB2BB0800E8504A /* Project object */;
+}
