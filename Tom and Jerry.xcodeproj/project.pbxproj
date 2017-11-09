@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C4312D3A769C337E2D81C7 /* Pods_Tom_and_Jerry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E669CE2A46F73D1C390ACA /* Pods_Tom_and_Jerry.framework */; };
 		1877C6591FB2BB0800E8504A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6581FB2BB0800E8504A /* AppDelegate.swift */; };
-		1877C65B1FB2BB0800E8504A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C65A1FB2BB0800E8504A /* ViewController.swift */; };
+		1877C65B1FB2BB0800E8504A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C65A1FB2BB0800E8504A /* StartViewController.swift */; };
 		1877C65E1FB2BB0800E8504A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1877C65C1FB2BB0800E8504A /* Main.storyboard */; };
 		1877C6601FB2BB0800E8504A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1877C65F1FB2BB0800E8504A /* Assets.xcassets */; };
 		1877C6631FB2BB0800E8504A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1877C6611FB2BB0800E8504A /* LaunchScreen.storyboard */; };
 		1877C66E1FB2BB0800E8504A /* Tom_and_JerryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C66D1FB2BB0800E8504A /* Tom_and_JerryTests.swift */; };
 		1877C6791FB2BB0800E8504A /* Tom_and_JerryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6781FB2BB0800E8504A /* Tom_and_JerryUITests.swift */; };
+		1877C6871FB2C4B500E8504A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6861FB2C4B500E8504A /* LoginViewController.swift */; };
+		1877C6891FB2C4C800E8504A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6881FB2C4C800E8504A /* RegisterViewController.swift */; };
+		1877C68F1FB3B99100E8504A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C68E1FB3B99100E8504A /* HomeViewController.swift */; };
+		1877C6911FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */; };
+		1877C6921FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */; };
+		1877C6931FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */; };
+		B2EED9FA3C53F8D8FE850AEA /* Pods_Tom_and_JerryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8FAA6B73002B1A2EEDE261 /* Pods_Tom_and_JerryUITests.framework */; };
+		BE10132332F4C0A01921C455 /* Pods_Tom_and_JerryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A64CCA5E7BEEA69B58B736C /* Pods_Tom_and_JerryTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CA03DB7AFBAD291B7735EBE /* Pods-Tom and JerryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tom and JerryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tom and JerryTests/Pods-Tom and JerryTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F676212A1B8EF1F3ADB9AFE /* Pods-Tom and JerryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tom and JerryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tom and JerryUITests/Pods-Tom and JerryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1877C6551FB2BB0800E8504A /* Tom and Jerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tom and Jerry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877C6581FB2BB0800E8504A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1877C65A1FB2BB0800E8504A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1877C65A1FB2BB0800E8504A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		1877C65D1FB2BB0800E8504A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1877C65F1FB2BB0800E8504A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1877C6621FB2BB0800E8504A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,17 @@
 		1877C6741FB2BB0800E8504A /* Tom and JerryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tom and JerryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877C6781FB2BB0800E8504A /* Tom_and_JerryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tom_and_JerryUITests.swift; sourceTree = "<group>"; };
 		1877C67A1FB2BB0800E8504A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1877C6861FB2C4B500E8504A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1877C6881FB2C4C800E8504A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1877C68E1FB3B99100E8504A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		39E13ED1C4D4F9FEC680ADBD /* Pods-Tom and JerryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tom and JerryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tom and JerryUITests/Pods-Tom and JerryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		434C553AF1BAB0D98548C950 /* Pods-Tom and Jerry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tom and Jerry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tom and Jerry/Pods-Tom and Jerry.debug.xcconfig"; sourceTree = "<group>"; };
+		4A64CCA5E7BEEA69B58B736C /* Pods_Tom_and_JerryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tom_and_JerryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4D5E2DD9BB658919D5FF14 /* Pods-Tom and Jerry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tom and Jerry.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tom and Jerry/Pods-Tom and Jerry.release.xcconfig"; sourceTree = "<group>"; };
+		73E669CE2A46F73D1C390ACA /* Pods_Tom_and_Jerry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tom_and_Jerry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C1ACF3F897166049FBE4AE /* Pods-Tom and JerryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tom and JerryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tom and JerryTests/Pods-Tom and JerryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE8FAA6B73002B1A2EEDE261 /* Pods_Tom_and_JerryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tom_and_JerryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C4312D3A769C337E2D81C7 /* Pods_Tom_and_Jerry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE10132332F4C0A01921C455 /* Pods_Tom_and_JerryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EED9FA3C53F8D8FE850AEA /* Pods_Tom_and_JerryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4E2BF0EDC9B8A5F7F780A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73E669CE2A46F73D1C390ACA /* Pods_Tom_and_Jerry.framework */,
+				4A64CCA5E7BEEA69B58B736C /* Pods_Tom_and_JerryTests.framework */,
+				DE8FAA6B73002B1A2EEDE261 /* Pods_Tom_and_JerryUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1877C64C1FB2BB0800E8504A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,8 @@
 				1877C66C1FB2BB0800E8504A /* Tom and JerryTests */,
 				1877C6771FB2BB0800E8504A /* Tom and JerryUITests */,
 				1877C6561FB2BB0800E8504A /* Products */,
+				1D8BBFA94235CCFC22E1AE96 /* Pods */,
+				0F4E2BF0EDC9B8A5F7F780A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +135,15 @@
 			isa = PBXGroup;
 			children = (
 				1877C6581FB2BB0800E8504A /* AppDelegate.swift */,
-				1877C65A1FB2BB0800E8504A /* ViewController.swift */,
+				1877C65A1FB2BB0800E8504A /* StartViewController.swift */,
 				1877C65C1FB2BB0800E8504A /* Main.storyboard */,
 				1877C65F1FB2BB0800E8504A /* Assets.xcassets */,
 				1877C6611FB2BB0800E8504A /* LaunchScreen.storyboard */,
 				1877C6641FB2BB0800E8504A /* Info.plist */,
+				1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */,
+				1877C6861FB2C4B500E8504A /* LoginViewController.swift */,
+				1877C6881FB2C4C800E8504A /* RegisterViewController.swift */,
+				1877C68E1FB3B99100E8504A /* HomeViewController.swift */,
 			);
 			path = "Tom and Jerry";
 			sourceTree = "<group>";
@@ -125,6 +166,19 @@
 			path = "Tom and JerryUITests";
 			sourceTree = "<group>";
 		};
+		1D8BBFA94235CCFC22E1AE96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				434C553AF1BAB0D98548C950 /* Pods-Tom and Jerry.debug.xcconfig */,
+				6B4D5E2DD9BB658919D5FF14 /* Pods-Tom and Jerry.release.xcconfig */,
+				92C1ACF3F897166049FBE4AE /* Pods-Tom and JerryTests.debug.xcconfig */,
+				0CA03DB7AFBAD291B7735EBE /* Pods-Tom and JerryTests.release.xcconfig */,
+				39E13ED1C4D4F9FEC680ADBD /* Pods-Tom and JerryUITests.debug.xcconfig */,
+				0F676212A1B8EF1F3ADB9AFE /* Pods-Tom and JerryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1877C67D1FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and Jerry" */;
 			buildPhases = (
+				AB9624DD11527088B41D8782 /* [CP] Check Pods Manifest.lock */,
 				1877C6511FB2BB0800E8504A /* Sources */,
 				1877C6521FB2BB0800E8504A /* Frameworks */,
 				1877C6531FB2BB0800E8504A /* Resources */,
+				58701469EEAA6A6D21AD57C3 /* [CP] Embed Pods Frameworks */,
+				CF6286EBE45FD1373E94B696 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1877C6801FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and JerryTests" */;
 			buildPhases = (
+				7E32232A3E317283D40B5FCD /* [CP] Check Pods Manifest.lock */,
 				1877C6651FB2BB0800E8504A /* Sources */,
 				1877C6661FB2BB0800E8504A /* Frameworks */,
 				1877C6671FB2BB0800E8504A /* Resources */,
+				01A690A0A9E207563495F3E8 /* [CP] Embed Pods Frameworks */,
+				CF4A16E2C357E95BAD0B885D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1877C6831FB2BB0800E8504A /* Build configuration list for PBXNativeTarget "Tom and JerryUITests" */;
 			buildPhases = (
+				9D4A8F4FB987267D990BBFCE /* [CP] Check Pods Manifest.lock */,
 				1877C6701FB2BB0800E8504A /* Sources */,
 				1877C6711FB2BB0800E8504A /* Frameworks */,
 				1877C6721FB2BB0800E8504A /* Resources */,
+				0F53CC40BF8C051E46770862 /* [CP] Embed Pods Frameworks */,
+				ED9715EB3BAB2435BDF24979 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1877C6631FB2BB0800E8504A /* LaunchScreen.storyboard in Resources */,
+				1877C6911FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */,
 				1877C6601FB2BB0800E8504A /* Assets.xcassets in Resources */,
 				1877C65E1FB2BB0800E8504A /* Main.storyboard in Resources */,
 			);
@@ -242,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1877C6921FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,18 +314,176 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1877C6931FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A690A0A9E207563495F3E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tom and JerryTests/Pods-Tom and JerryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F53CC40BF8C051E46770862 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tom and JerryUITests/Pods-Tom and JerryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58701469EEAA6A6D21AD57C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tom and Jerry/Pods-Tom and Jerry-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tom and Jerry/Pods-Tom and Jerry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E32232A3E317283D40B5FCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tom and JerryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D4A8F4FB987267D990BBFCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tom and JerryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9624DD11527088B41D8782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tom and Jerry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF4A16E2C357E95BAD0B885D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tom and JerryTests/Pods-Tom and JerryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF6286EBE45FD1373E94B696 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tom and Jerry/Pods-Tom and Jerry-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED9715EB3BAB2435BDF24979 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tom and JerryUITests/Pods-Tom and JerryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1877C6511FB2BB0800E8504A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1877C65B1FB2BB0800E8504A /* ViewController.swift in Sources */,
+				1877C68F1FB3B99100E8504A /* HomeViewController.swift in Sources */,
+				1877C6871FB2C4B500E8504A /* LoginViewController.swift in Sources */,
+				1877C65B1FB2BB0800E8504A /* StartViewController.swift in Sources */,
 				1877C6591FB2BB0800E8504A /* AppDelegate.swift in Sources */,
+				1877C6891FB2C4C800E8504A /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +647,7 @@
 		};
 		1877C67E1FB2BB0800E8504A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434C553AF1BAB0D98548C950 /* Pods-Tom and Jerry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +663,7 @@
 		};
 		1877C67F1FB2BB0800E8504A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4D5E2DD9BB658919D5FF14 /* Pods-Tom and Jerry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +679,7 @@
 		};
 		1877C6811FB2BB0800E8504A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C1ACF3F897166049FBE4AE /* Pods-Tom and JerryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +697,7 @@
 		};
 		1877C6821FB2BB0800E8504A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CA03DB7AFBAD291B7735EBE /* Pods-Tom and JerryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +715,7 @@
 		};
 		1877C6841FB2BB0800E8504A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E13ED1C4D4F9FEC680ADBD /* Pods-Tom and JerryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +732,7 @@
 		};
 		1877C6851FB2BB0800E8504A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F676212A1B8EF1F3ADB9AFE /* Pods-Tom and JerryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>362867811148-q6q2f4vv1jjiap98in0lt2u3lmfvb5tn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.362867811148-q6q2f4vv1jjiap98in0lt2u3lmfvb5tn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAMdI3Alw4zHLDJ9kJxmwNL_ZeuUybAhEc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>362867811148</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>SophiaSun.Tom-and-Jerry</string>
+	<key>PROJECT_ID</key>
+	<string>tom-and-jerry-a4bd1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tom-and-jerry-a4bd1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:362867811148:ios:7ba3a3e1f8398016</string>
+	<key>DATABASE_URL</key>
+	<string>https://tom-and-jerry-a4bd1.firebaseio.com</string>
+</dict>
+</plist>

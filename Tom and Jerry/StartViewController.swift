@@ -8,11 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
 
+    @IBOutlet weak var StartImage: UIImageView!
+    
+    
+    @IBAction func LoginAction(_ sender: Any) {
+
+    }
+    
+    @IBAction func RegisterAction(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        StartImage.image = UIImage(named:"tomjerry")!
     }
 
     override func didReceiveMemoryWarning() {
