@@ -21,6 +21,11 @@
 		1877C6911FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */; };
 		1877C6921FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */; };
 		1877C6931FB3CCBB00E8504A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */; };
+		1877C6951FB3E9BA00E8504A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6941FB3E9BA00E8504A /* HistoryViewController.swift */; };
+		1877C6971FB3EB0000E8504A /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6961FB3EB0000E8504A /* Report.swift */; };
+		1877C6991FB4005A00E8504A /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C6981FB4005A00E8504A /* ReportViewController.swift */; };
+		1877C69B1FB410D800E8504A /* NewReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C69A1FB410D800E8504A /* NewReportViewController.swift */; };
+		1877C69D1FB411B400E8504A /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C69C1FB411B400E8504A /* GraphViewController.swift */; };
 		B2EED9FA3C53F8D8FE850AEA /* Pods_Tom_and_JerryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8FAA6B73002B1A2EEDE261 /* Pods_Tom_and_JerryUITests.framework */; };
 		BE10132332F4C0A01921C455 /* Pods_Tom_and_JerryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A64CCA5E7BEEA69B58B736C /* Pods_Tom_and_JerryTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +67,11 @@
 		1877C6881FB2C4C800E8504A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1877C68E1FB3B99100E8504A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1877C6901FB3CCBA00E8504A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1877C6941FB3E9BA00E8504A /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		1877C6961FB3EB0000E8504A /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		1877C6981FB4005A00E8504A /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		1877C69A1FB410D800E8504A /* NewReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReportViewController.swift; sourceTree = "<group>"; };
+		1877C69C1FB411B400E8504A /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		39E13ED1C4D4F9FEC680ADBD /* Pods-Tom and JerryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tom and JerryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tom and JerryUITests/Pods-Tom and JerryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		434C553AF1BAB0D98548C950 /* Pods-Tom and Jerry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tom and Jerry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tom and Jerry/Pods-Tom and Jerry.debug.xcconfig"; sourceTree = "<group>"; };
 		4A64CCA5E7BEEA69B58B736C /* Pods_Tom_and_JerryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tom_and_JerryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +147,8 @@
 				1877C6581FB2BB0800E8504A /* AppDelegate.swift */,
 				1877C65A1FB2BB0800E8504A /* StartViewController.swift */,
 				1877C65C1FB2BB0800E8504A /* Main.storyboard */,
+				1877C69C1FB411B400E8504A /* GraphViewController.swift */,
+				1877C69A1FB410D800E8504A /* NewReportViewController.swift */,
 				1877C65F1FB2BB0800E8504A /* Assets.xcassets */,
 				1877C6611FB2BB0800E8504A /* LaunchScreen.storyboard */,
 				1877C6641FB2BB0800E8504A /* Info.plist */,
@@ -144,6 +156,9 @@
 				1877C6861FB2C4B500E8504A /* LoginViewController.swift */,
 				1877C6881FB2C4C800E8504A /* RegisterViewController.swift */,
 				1877C68E1FB3B99100E8504A /* HomeViewController.swift */,
+				1877C6941FB3E9BA00E8504A /* HistoryViewController.swift */,
+				1877C6961FB3EB0000E8504A /* Report.swift */,
+				1877C6981FB4005A00E8504A /* ReportViewController.swift */,
 			);
 			path = "Tom and Jerry";
 			sourceTree = "<group>";
@@ -360,12 +375,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tom and Jerry/Pods-Tom and Jerry-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,9 +496,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1877C6991FB4005A00E8504A /* ReportViewController.swift in Sources */,
+				1877C69D1FB411B400E8504A /* GraphViewController.swift in Sources */,
+				1877C6971FB3EB0000E8504A /* Report.swift in Sources */,
 				1877C68F1FB3B99100E8504A /* HomeViewController.swift in Sources */,
+				1877C69B1FB410D800E8504A /* NewReportViewController.swift in Sources */,
 				1877C6871FB2C4B500E8504A /* LoginViewController.swift in Sources */,
 				1877C65B1FB2BB0800E8504A /* StartViewController.swift in Sources */,
+				1877C6951FB3E9BA00E8504A /* HistoryViewController.swift in Sources */,
 				1877C6591FB2BB0800E8504A /* AppDelegate.swift in Sources */,
 				1877C6891FB2C4C800E8504A /* RegisterViewController.swift in Sources */,
 			);

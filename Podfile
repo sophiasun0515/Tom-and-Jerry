@@ -8,6 +8,7 @@ target 'Tom and Jerry' do
   # Pods for Tom and Jerry
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   target 'Tom and JerryTests' do
     inherit! :search_paths
     # Pods for testing
