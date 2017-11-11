@@ -17,12 +17,17 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var inputPassword: UITextField!
     
+//    var username: String?
+//    var password: String?
     
     @IBOutlet weak var Profile: UIImageView!
     
     
-    @IBAction func loginAction(_ sender: Any) {
-        if self.inputUserName.text == "" || self.inputPassword.text == "" {
+    @IBAction func loginAction(_ sender: Any?) {
+        
+//        username = self.inputUserName?.text
+//        password = self.inputPassword?.text
+        if (self.inputUserName?.text == nil || self.inputPassword?.text == nil) {
             
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
             
@@ -43,8 +48,9 @@ class LoginViewController: UIViewController {
                     print("You have successfully logged in")
                     
                     //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
-                    self.present(vc!, animated: true, completion: nil)
+                    self.performSegue(withIdentifier: "LoginToReport", sender: nil)
+//                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+//                    self.present(vc!, animated: true, completion: nil)
                     
                 } else {
                     

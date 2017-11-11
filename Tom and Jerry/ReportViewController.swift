@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseDatabase
 
 class ReportViewController: UIViewController {
 
@@ -36,12 +36,9 @@ class ReportViewController: UIViewController {
     var latitudeText: String?
     var addressText: String?
     
-    var ref: DatabaseReference!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = Database.database().reference()
         date.text = dateText
         location.text = locationText
         zip.text = zipText
@@ -50,7 +47,6 @@ class ReportViewController: UIViewController {
         longitude.text = longitudeText
         latitude.text = latitudeText
         address.text = addressText
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,15 +54,5 @@ class ReportViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
