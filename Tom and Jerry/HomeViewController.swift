@@ -65,9 +65,12 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
                             let cityName = subValue["City"] as? String,
                             let latitute = subValue["Latitude"] as? String,
                             let longitude = subValue["Longitude"] as? String,
+                            let address = subValue["Incident Address"] as? String,
+                            let date = subValue["Created Date"] as? String,
+                            let locationType = subValue["Location Type"] as? String,
                             let doubleLatitute = Double(latitute),
                             let doubleLongitude = Double(longitude) {
-                            let pin = CustomAnnotation(name: cityName, coordinate: CLLocationCoordinate2D(latitude: doubleLatitute, longitude: doubleLongitude), title: cityName, subtitle: "\(longitude), \(latitute)")
+                            let pin = CustomAnnotation(name: cityName, coordinate: CLLocationCoordinate2D(latitude: doubleLatitute, longitude: doubleLongitude), title: address, subtitle: "\(date), \(locationType)")
                             self.self.mapView.addAnnotation(pin)
                         }
                     }

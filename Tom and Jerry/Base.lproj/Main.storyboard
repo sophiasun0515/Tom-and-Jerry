@@ -319,7 +319,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjk-fk-hJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3166" y="935"/>
+            <point key="canvasLocation" x="3039" y="923"/>
         </scene>
         <!--Graph View Controller-->
         <scene sceneID="i0G-Px-9iQ">
@@ -773,11 +773,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEz-T9-qDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2452.8000000000002" y="935.53223388305855"/>
+            <point key="canvasLocation" x="2250" y="922"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pvb-dO-6H8"/>
+        <segue reference="Fgb-NS-gcg"/>
         <segue reference="ZuD-TF-gJl"/>
     </inferredMetricsTieBreakers>
 </document>
