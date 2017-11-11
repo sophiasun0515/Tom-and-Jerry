@@ -67,8 +67,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
                             let longitude = subValue["Longitude"] as? String,
                             let doubleLatitute = Double(latitute),
                             let doubleLongitude = Double(longitude) {
-                            
-                            let pin = CustomAnnotation(name: cityName, coordinate: CLLocationCoordinate2D(latitude: doubleLatitute, longitude: doubleLongitude))
+                            let pin = CustomAnnotation(name: cityName, coordinate: CLLocationCoordinate2D(latitude: doubleLatitute, longitude: doubleLongitude), title: cityName, subtitle: "\(longitude), \(latitute)")
                             self.self.mapView.addAnnotation(pin)
                         }
                     }
@@ -125,9 +124,13 @@ class CustomAnnotation : NSObject, MKAnnotation {
     
     var coordinate: CLLocationCoordinate2D
     var name: String = ""
+    var title: String?
+    var subtitle: String?
     
-    init(name: String, coordinate: CLLocationCoordinate2D) {
+    init(name: String, coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?) {
         self.coordinate = coordinate
         self.name = name
+        self.title = title
+        self.subtitle = subtitle
     }
 }
