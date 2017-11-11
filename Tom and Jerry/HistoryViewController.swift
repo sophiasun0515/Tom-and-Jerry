@@ -48,7 +48,7 @@ class HistoryViewController: UITableViewController {
                         let locationType = value["Location Type"] as? String,
                         let longitude = value["Longitude"] as? String
                     {
-                        print(value)
+//                        print(value)
                         let report = Report(key: hardcodedReportCode,
                                             keyText: "\(hardcodedReportCode)",
                             date: createdDate,
