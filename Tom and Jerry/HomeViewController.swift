@@ -16,6 +16,8 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
     var startingDate: Date = Date.init()
     var endingDate: Date = Date.init()
     
+    var extraReportsToPassThrough: [Report] = []
+    
     @IBOutlet weak var datePickerItself: UIDatePicker!
     @IBOutlet weak var datePickerSegmentedControl: UISegmentedControl!
     @IBOutlet weak var datePickerContainer: UIView!
@@ -111,15 +113,21 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let newVC = segue.destination as? NewReportViewController {
+            newVC.didAddReport = { [weak self](report) in
+                if let vc = self {
+                    self?.extraReportsToPassThrough.append(report)
+                }
+            }
+        }
+        if let historyVC = segue.destination as? HistoryViewController {
+            print(extraReportsToPassThrough)
+            for report in extraReportsToPassThrough {
+                historyVC.reports.append(report)
+            }
+        }
     }
-    */
 
 }
 

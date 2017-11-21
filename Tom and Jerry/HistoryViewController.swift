@@ -10,6 +10,16 @@ import UIKit
 import FirebaseDatabase
 
 class HistoryViewController: UITableViewController {
+    
+//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    
+    
     var reports:[Report] = []
     var ref: DatabaseReference! = Database.database().reference()
     var arrayOfInitialReports:[Int] = [11464394,

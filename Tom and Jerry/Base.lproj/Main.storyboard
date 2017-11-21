@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KVe-K4-Bal">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KVe-K4-Bal">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -188,7 +188,7 @@
                                     <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="76E-Pu-Vbj" kind="show" id="FBA-GG-Wvj"/>
+                                    <segue destination="DE3-ZJ-EdE" kind="show" id="C6O-EO-i4a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8j-v2-sn9">
@@ -286,7 +286,7 @@
             </objects>
             <point key="canvasLocation" x="1405.5999999999999" y="921.58920539730138"/>
         </scene>
-        <!--History-->
+        <!--Rat History-->
         <scene sceneID="NAt-s9-gpl">
             <objects>
                 <tableViewController id="DE3-ZJ-EdE" customClass="HistoryViewController" customModule="Tom_and_Jerry" sceneMemberID="viewController">
@@ -312,14 +312,16 @@
                             <outlet property="delegate" destination="DE3-ZJ-EdE" id="cKa-UP-9ZG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="History" id="10G-7T-Emb"/>
+                    <navigationItem key="navigationItem" title="Rat History" id="10G-7T-Emb">
+                        <barButtonItem key="backBarButtonItem" title="History" id="QCK-cG-nzC"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="8gk-rN-1vZ" kind="show" identifier="ReportDetails" id="wOr-LF-hah"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjk-fk-hJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3039" y="923"/>
+            <point key="canvasLocation" x="2242" y="922"/>
         </scene>
         <!--Graph View Controller-->
         <scene sceneID="i0G-Px-9iQ">
@@ -365,158 +367,158 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ady-k4-ANa">
-                                <rect key="frame" x="144" y="70" width="87" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ywN-8h-wDD">
+                                <rect key="frame" x="105.5" y="161" width="164.5" height="345"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a4h-ip-aZF">
+                                        <rect key="frame" x="0.0" y="0.5" width="118.5" height="344"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4o-8s-Wd3">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationType:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMU-Pn-7oA">
+                                                <rect key="frame" x="0.0" y="45.5" width="118.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cJ-eW-3ho">
+                                                <rect key="frame" x="0.0" y="91" width="118.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTn-VU-RsO">
+                                                <rect key="frame" x="0.0" y="136.5" width="118.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borough:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sU-iv-mas">
+                                                <rect key="frame" x="0.0" y="182" width="118.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg0-Vn-sSt">
+                                                <rect key="frame" x="0.0" y="227.5" width="118.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhk-xE-DR2">
+                                                <rect key="frame" x="0.0" y="273" width="118.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcR-rZ-WRz">
+                                                <rect key="frame" x="0.0" y="318.5" width="118.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zG5-UJ-S7g">
+                                        <rect key="frame" x="138.5" y="0.0" width="26" height="345"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="les-wT-qxE">
+                                                <rect key="frame" x="0.0" y="0.0" width="26" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KoC-Fo-wFw">
+                                                <rect key="frame" x="0.0" y="45" width="26" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zu3-tT-9Ha">
+                                                <rect key="frame" x="0.0" y="90" width="26" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Njj-YQ-0eO">
+                                                <rect key="frame" x="0.0" y="135" width="26" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grp-Jc-Ukg">
+                                                <rect key="frame" x="0.0" y="180" width="26" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDk-gG-nEc">
+                                                <rect key="frame" x="0.0" y="225" width="26" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="poI-pp-vgE">
+                                                <rect key="frame" x="0.0" y="270" width="26" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZp-th-1Nt">
+                                                <rect key="frame" x="0.0" y="315" width="26" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="ZOr-Wd-Nlw"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnx-fy-bwH">
+                                <rect key="frame" x="149" y="86" width="76.5" height="31"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYK-xV-bdi">
-                                <rect key="frame" x="61" y="140" width="45" height="26"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISm-pf-ME3">
-                                <rect key="frame" x="61" y="320" width="39" height="26"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationType:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbA-pG-imb">
-                                <rect key="frame" x="61" y="200" width="119" height="26"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgs-oM-WZn">
-                                <rect key="frame" x="61" y="440" width="89" height="26"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFN-oM-dah">
-                                <rect key="frame" x="61" y="500" width="72" height="26"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ne-54-fwB">
-                                <rect key="frame" x="61" y="560" width="73" height="26"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgi-ZD-zaP">
-                                <rect key="frame" x="61" y="260" width="84" height="26"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borough:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-ud-V0u">
-                                <rect key="frame" x="61" y="380" width="78" height="26"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Yt-1B-mm7">
-                                <rect key="frame" x="116" y="129" width="140" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ct7-QU-Gpg">
-                                <rect key="frame" x="190" y="193" width="166" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUR-ZX-qVj">
-                                <rect key="frame" x="163" y="257" width="169" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lv-qT-eeT">
-                                <rect key="frame" x="163" y="321" width="169" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OQt-7m-hgt">
-                                <rect key="frame" x="155" y="385" width="140" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oOS-o5-bMt">
-                                <rect key="frame" x="143" y="513" width="140" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRH-4H-RzY">
-                                <rect key="frame" x="160" y="449" width="140" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQ5-yu-drN">
-                                <rect key="frame" x="144" y="577" width="140" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIb-zG-YIK">
+                                <rect key="frame" x="141" y="546" width="93" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Add Report">
+                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addReportAction:" destination="7eL-G8-6rG" eventType="touchUpInside" id="YgQ-S7-WoY"/>
+                                    <segue destination="6Uo-Wa-jGX" kind="show" id="9Xk-JX-mC6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="leading" secondItem="ISm-pf-ME3" secondAttribute="leading" id="2sR-vT-ISF"/>
-                            <constraint firstItem="Ady-k4-ANa" firstAttribute="top" secondItem="DmH-TS-7PQ" secondAttribute="top" constant="50" id="3zK-VH-Elk"/>
-                            <constraint firstItem="OQt-7m-hgt" firstAttribute="leading" secondItem="PZe-ud-V0u" secondAttribute="trailing" constant="16" id="4ke-09-ydZ"/>
-                            <constraint firstItem="jUR-ZX-qVj" firstAttribute="leading" secondItem="5lv-qT-eeT" secondAttribute="leading" id="5Xg-wi-g5A"/>
-                            <constraint firstItem="fYK-xV-bdi" firstAttribute="top" secondItem="DmH-TS-7PQ" secondAttribute="top" constant="120" id="5m2-VP-iVe"/>
-                            <constraint firstItem="cQ5-yu-drN" firstAttribute="top" secondItem="oOS-o5-bMt" secondAttribute="bottom" constant="34" id="8Ya-Ia-2YE"/>
-                            <constraint firstItem="Ct7-QU-Gpg" firstAttribute="leading" secondItem="CbA-pG-imb" secondAttribute="trailing" constant="10" id="98D-Y5-b2E"/>
-                            <constraint firstItem="jUR-ZX-qVj" firstAttribute="leading" secondItem="fgi-ZD-zaP" secondAttribute="trailing" constant="18" id="AXg-CN-GfV"/>
-                            <constraint firstItem="Ady-k4-ANa" firstAttribute="leading" secondItem="DmH-TS-7PQ" secondAttribute="leading" constant="144" id="BYw-VP-bKD"/>
-                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="OQt-7m-hgt" secondAttribute="trailing" constant="80" id="Fu1-I4-5f9"/>
-                            <constraint firstItem="NFN-oM-dah" firstAttribute="top" secondItem="fgs-oM-WZn" secondAttribute="bottom" constant="34" id="H7k-1g-7nt"/>
-                            <constraint firstItem="6ne-54-fwB" firstAttribute="top" secondItem="NFN-oM-dah" secondAttribute="bottom" constant="34" id="KGf-US-bdW"/>
-                            <constraint firstItem="6Yt-1B-mm7" firstAttribute="leading" secondItem="fYK-xV-bdi" secondAttribute="trailing" constant="10" id="Lid-1U-cqF"/>
-                            <constraint firstItem="PRH-4H-RzY" firstAttribute="top" secondItem="OQt-7m-hgt" secondAttribute="bottom" constant="34" id="Mit-yJ-hrh"/>
-                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="6Yt-1B-mm7" secondAttribute="trailing" constant="119" id="Myx-fu-yUE"/>
-                            <constraint firstItem="PZe-ud-V0u" firstAttribute="top" secondItem="ISm-pf-ME3" secondAttribute="bottom" constant="34" id="OTA-NR-wdi"/>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="leading" secondItem="DmH-TS-7PQ" secondAttribute="leading" constant="61" id="PeS-8I-jBI"/>
-                            <constraint firstItem="cQ5-yu-drN" firstAttribute="leading" secondItem="6ne-54-fwB" secondAttribute="trailing" constant="10" id="SOe-dz-s1L"/>
-                            <constraint firstItem="fgi-ZD-zaP" firstAttribute="top" secondItem="CbA-pG-imb" secondAttribute="bottom" constant="34" id="T27-jg-tEu"/>
-                            <constraint firstItem="fgs-oM-WZn" firstAttribute="top" secondItem="PZe-ud-V0u" secondAttribute="bottom" constant="34" id="TQN-Ar-YRn"/>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="leading" secondItem="6ne-54-fwB" secondAttribute="leading" id="Xdp-wa-QlS"/>
-                            <constraint firstItem="jUR-ZX-qVj" firstAttribute="trailing" secondItem="5lv-qT-eeT" secondAttribute="trailing" id="Xq8-Ef-W2n"/>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="leading" secondItem="NFN-oM-dah" secondAttribute="leading" id="Y3d-mT-mKK"/>
-                            <constraint firstItem="Ct7-QU-Gpg" firstAttribute="top" secondItem="6Yt-1B-mm7" secondAttribute="bottom" constant="34" id="Z07-tj-OZQ"/>
-                            <constraint firstItem="jUR-ZX-qVj" firstAttribute="top" secondItem="CbA-pG-imb" secondAttribute="bottom" constant="31" id="Zue-pz-4eV"/>
-                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="oOS-o5-bMt" secondAttribute="trailing" constant="92" id="aB0-yd-rLm"/>
-                            <constraint firstItem="PRH-4H-RzY" firstAttribute="leading" secondItem="fgs-oM-WZn" secondAttribute="trailing" constant="10" id="cXq-St-qhC"/>
-                            <constraint firstItem="OQt-7m-hgt" firstAttribute="top" secondItem="5lv-qT-eeT" secondAttribute="bottom" constant="34" id="dd9-wE-Qwu"/>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="leading" secondItem="fgs-oM-WZn" secondAttribute="leading" id="eNR-CU-tJr"/>
-                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="cQ5-yu-drN" secondAttribute="trailing" constant="91" id="hQJ-xj-uhi"/>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="top" secondItem="fYK-xV-bdi" secondAttribute="bottom" constant="34" id="hZa-fd-bVw"/>
-                            <constraint firstItem="jUR-ZX-qVj" firstAttribute="top" secondItem="Ct7-QU-Gpg" secondAttribute="bottom" constant="34" id="hph-nE-H99"/>
-                            <constraint firstItem="oOS-o5-bMt" firstAttribute="leading" secondItem="NFN-oM-dah" secondAttribute="trailing" constant="10" id="jML-ci-4Ol"/>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="leading" secondItem="fYK-xV-bdi" secondAttribute="leading" id="oVO-ha-RFj"/>
-                            <constraint firstItem="ISm-pf-ME3" firstAttribute="top" secondItem="fgi-ZD-zaP" secondAttribute="bottom" constant="34" id="pHh-zc-vW6"/>
-                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="jUR-ZX-qVj" secondAttribute="trailing" constant="43" id="rFH-JZ-aDO"/>
-                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="PRH-4H-RzY" secondAttribute="trailing" constant="75" id="tSq-vB-wEs"/>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="leading" secondItem="PZe-ud-V0u" secondAttribute="leading" id="vH4-ie-Uid"/>
-                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="Ady-k4-ANa" secondAttribute="trailing" constant="144" id="wVh-aW-AhB"/>
-                            <constraint firstItem="oOS-o5-bMt" firstAttribute="top" secondItem="PRH-4H-RzY" secondAttribute="bottom" constant="34" id="x1Q-em-UTk"/>
-                            <constraint firstItem="jUR-ZX-qVj" firstAttribute="leading" secondItem="fgi-ZD-zaP" secondAttribute="trailing" constant="18" id="xDG-4Q-Ey3"/>
-                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="Ct7-QU-Gpg" secondAttribute="trailing" constant="19" id="xjc-Dr-BGn"/>
-                            <constraint firstItem="5lv-qT-eeT" firstAttribute="top" secondItem="jUR-ZX-qVj" secondAttribute="bottom" constant="34" id="y2m-2E-VZR"/>
-                            <constraint firstItem="CbA-pG-imb" firstAttribute="leading" secondItem="fgi-ZD-zaP" secondAttribute="leading" id="zIu-kl-z7Y"/>
+                            <constraint firstItem="DmH-TS-7PQ" firstAttribute="trailing" secondItem="YIb-zG-YIK" secondAttribute="trailing" constant="141" id="48L-8b-aQj"/>
+                            <constraint firstItem="ywN-8h-wDD" firstAttribute="centerY" secondItem="IIl-FN-7ae" secondAttribute="centerY" id="FTv-hv-9pr"/>
+                            <constraint firstItem="YIb-zG-YIK" firstAttribute="leading" secondItem="DmH-TS-7PQ" secondAttribute="leading" constant="141" id="KPL-HC-2ly"/>
+                            <constraint firstItem="vnx-fy-bwH" firstAttribute="top" secondItem="DmH-TS-7PQ" secondAttribute="top" constant="66" id="Q9M-Zj-9hi"/>
+                            <constraint firstItem="ywN-8h-wDD" firstAttribute="centerX" secondItem="IIl-FN-7ae" secondAttribute="centerX" id="VHK-1A-1MM"/>
+                            <constraint firstItem="YIb-zG-YIK" firstAttribute="top" secondItem="ywN-8h-wDD" secondAttribute="bottom" constant="40" id="fjr-6i-53h"/>
+                            <constraint firstItem="vnx-fy-bwH" firstAttribute="centerX" secondItem="IIl-FN-7ae" secondAttribute="centerX" id="wo6-b2-XQM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DmH-TS-7PQ"/>
                     </view>
+                    <connections>
+                        <outlet property="AddressField" destination="hZp-th-1Nt" id="032-5A-6fQ"/>
+                        <outlet property="BoroughField" destination="grp-Jc-Ukg" id="N2w-sr-hGK"/>
+                        <outlet property="CityField" destination="Njj-YQ-0eO" id="t99-Sh-W2Z"/>
+                        <outlet property="DateField" destination="les-wT-qxE" id="kMM-Oj-cth"/>
+                        <outlet property="LatitudeField" destination="poI-pp-vgE" id="vg6-em-AAf"/>
+                        <outlet property="LocationTypeField" destination="KoC-Fo-wFw" id="UaG-Dd-m6t"/>
+                        <outlet property="LongitudeField" destination="rDk-gG-nEc" id="tbt-RZ-kmL"/>
+                        <outlet property="ZipField" destination="Zu3-tT-9Ha" id="u73-BL-p5U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YsP-xn-atB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -642,7 +644,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAe-Fy-pSm">
-                                <rect key="frame" x="149.5" y="80" width="76.5" height="31"/>
+                                <rect key="frame" x="149.5" y="36" width="76.5" height="31"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -757,27 +759,10 @@
             </objects>
             <point key="canvasLocation" x="-335" y="133"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="29J-6E-nud">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="76E-Pu-Vbj" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oNz-XN-rym">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="DE3-ZJ-EdE" kind="relationship" relationship="rootViewController" id="TEU-qO-fRI"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mEz-T9-qDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2250" y="922"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fgb-NS-gcg"/>
+        <segue reference="7sW-Xq-XuV"/>
+        <segue reference="9Xk-JX-mC6"/>
         <segue reference="ZuD-TF-gJl"/>
     </inferredMetricsTieBreakers>
 </document>
