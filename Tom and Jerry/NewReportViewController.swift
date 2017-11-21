@@ -37,7 +37,18 @@ class NewReportViewController: UIViewController {
     var didAddReport: ((_ report: Report) -> Void)?
     
     @IBAction func addReportAction(_ sender: Any?) {
-        if (self.DateField?.text == nil || self.LocationTypeField?.text == nil || self.ZipField?.text == nil || self.CityField?.text == nil || self.BoroughField?.text == nil || self.LongitudeField?.text == nil || self.LatitudeField?.text == nil || self.AddressField?.text == nil) {
+        guard let dateText = self.DateField?.text,
+            let locationText = self.LocationTypeField?.text,
+            let zipText = self.ZipField?.text,
+            let cityText = self.CityField?.text,
+            let boroughText = self.BoroughField?.text,
+            let longitudeText = self.LongitudeField?.text,
+            let latitudeText = self.LatitudeField?.text,
+            let addressText = self.AddressField?.text
+        else {
+            return
+        }
+        if (dateText.isEmpty || locationText.isEmpty || zipText.isEmpty || cityText.isEmpty || boroughText.isEmpty || longitudeText.isEmpty || latitudeText.isEmpty || addressText.isEmpty) {
             let alertController = UIAlertController(title: "Error", message: "Please fill in all the required fields.", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -46,7 +57,7 @@ class NewReportViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         } else {
             success(message: "Report Added successfully!")
-            var completionHandler = ref.child("IDcounter").child("counter").observe(.value, with: { (snapshot) in
+            var completionHandler = ref.child("IDcounter").child("counter").observeSingleEvent(of: .value, with: { (snapshot) in
 //
                 if let keyValueData = snapshot.value as? Int {
                     print("keyValueData: \(keyValueData)")
