@@ -199,7 +199,8 @@
                                     <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ZuD-TF-gJl"/>
+                                    <action selector="logoutAction:" destination="6Uo-Wa-jGX" eventType="touchUpInside" id="eaq-aK-T8k"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7n3-9d-Jrx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzU-lb-ErO">
@@ -331,33 +332,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Start Date" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9s-7D-I4R">
-                                <rect key="frame" x="33" y="67" width="87" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="End Date" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUb-C0-KW8">
-                                <rect key="frame" x="248" y="67" width="80" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="X5n-9e-foe">
+                                <rect key="frame" x="0.0" y="106" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="532071682.59105003">
+                                    <!--2017-11-11 05:41:22 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerItselfChanged:" destination="6Uo-Wa-jGX" eventType="valueChanged" id="vlK-EI-WQk"/>
+                                </connections>
+                            </datePicker>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="35x-gH-pcg">
+                                <rect key="frame" x="92" y="70" width="191" height="29"/>
+                                <segments>
+                                    <segment title="Starting Date"/>
+                                    <segment title="Ending Date"/>
+                                </segments>
+                                <connections>
+                                    <action selector="datePickerSegmentChanged:" destination="6Uo-Wa-jGX" eventType="valueChanged" id="GDb-zW-sZ2"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9w-8E-J4k">
+                                <rect key="frame" x="322" y="70" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="dismissDatePicker:" destination="6Uo-Wa-jGX" eventType="touchUpInside" id="e4J-Yh-1hL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgP-XS-Jjm" customClass="ScrollableGraphView" customModule="ScrollableGraphView">
+                                <rect key="frame" x="0.0" y="322" width="375" height="490"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="C9s-7D-I4R" firstAttribute="top" secondItem="5W4-vJ-zF0" secondAttribute="top" constant="23" id="DVF-uW-y5f"/>
-                            <constraint firstItem="cUb-C0-KW8" firstAttribute="leading" secondItem="C9s-7D-I4R" secondAttribute="trailing" constant="128" id="LHG-GY-ViK"/>
-                            <constraint firstItem="5W4-vJ-zF0" firstAttribute="trailing" secondItem="cUb-C0-KW8" secondAttribute="trailing" constant="47" id="NsV-ab-19P"/>
-                            <constraint firstItem="cUb-C0-KW8" firstAttribute="top" secondItem="5W4-vJ-zF0" secondAttribute="top" constant="23" id="T7Z-WW-DIW"/>
-                            <constraint firstItem="C9s-7D-I4R" firstAttribute="leading" secondItem="5W4-vJ-zF0" secondAttribute="leading" constant="33" id="fvG-dg-rko"/>
+                            <constraint firstItem="X5n-9e-foe" firstAttribute="top" secondItem="a9w-8E-J4k" secondAttribute="bottom" constant="6" id="8tj-dn-kWc"/>
+                            <constraint firstItem="a9w-8E-J4k" firstAttribute="top" secondItem="5W4-vJ-zF0" secondAttribute="top" constant="26" id="Dhz-Vu-yWt"/>
+                            <constraint firstItem="X5n-9e-foe" firstAttribute="leading" secondItem="5W4-vJ-zF0" secondAttribute="leading" id="L9t-vb-Fo2"/>
+                            <constraint firstItem="35x-gH-pcg" firstAttribute="leading" secondItem="5W4-vJ-zF0" secondAttribute="leading" constant="92" id="Lbk-fX-YMl"/>
+                            <constraint firstItem="X5n-9e-foe" firstAttribute="trailing" secondItem="5W4-vJ-zF0" secondAttribute="trailing" id="esj-np-FNH"/>
+                            <constraint firstAttribute="bottom" secondItem="OgP-XS-Jjm" secondAttribute="bottom" id="fvQ-yq-j3j"/>
+                            <constraint firstItem="35x-gH-pcg" firstAttribute="top" secondItem="5W4-vJ-zF0" secondAttribute="top" constant="26" id="qrE-Hz-xOc"/>
+                            <constraint firstItem="OgP-XS-Jjm" firstAttribute="top" secondItem="X5n-9e-foe" secondAttribute="bottom" id="sWE-8P-cYi"/>
+                            <constraint firstItem="OgP-XS-Jjm" firstAttribute="leading" secondItem="5W4-vJ-zF0" secondAttribute="leading" id="tg1-7n-i9Q"/>
+                            <constraint firstItem="a9w-8E-J4k" firstAttribute="leading" secondItem="35x-gH-pcg" secondAttribute="trailing" constant="39" id="uLS-GP-k93"/>
+                            <constraint firstItem="OgP-XS-Jjm" firstAttribute="trailing" secondItem="5W4-vJ-zF0" secondAttribute="trailing" id="wM9-jN-Cyf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5W4-vJ-zF0"/>
                     </view>
+                    <connections>
+                        <outlet property="GraphView" destination="OgP-XS-Jjm" id="fW6-xe-xU6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLi-gO-1j8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1278" y="1698"/>
+            <point key="canvasLocation" x="1277.5999999999999" y="1697.2906403940888"/>
         </scene>
         <!--New Report View Controller-->
         <scene sceneID="8MV-jV-eQr">
@@ -785,7 +813,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Xk-JX-mC6"/>
-        <segue reference="ZuD-TF-gJl"/>
+        <segue reference="pvb-dO-6H8"/>
+        <segue reference="7n3-9d-Jrx"/>
     </inferredMetricsTieBreakers>
 </document>

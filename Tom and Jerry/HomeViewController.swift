@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 import MapKit
 
 class HomeViewController: UIViewController, MKMapViewDelegate {
@@ -17,6 +18,15 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
     var endingDate: Date = Date.init()
     
     var extraReportsToPassThrough: [Report] = []
+    
+    @IBAction func logoutAction(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
     
     @IBOutlet weak var datePickerItself: UIDatePicker!
     @IBOutlet weak var datePickerSegmentedControl: UISegmentedControl!
