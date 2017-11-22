@@ -7,28 +7,101 @@
 //
 
 import UIKit
+import Firebase
 import ScrollableGraphView
 
-class GraphViewController: UIViewController, ScrollableGraphViewDataSource {
+class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
+
+    @IBOutlet weak var segmentedSelector: UISegmentedControl!
+    @IBOutlet weak var yearPicker: UIPickerView!
+    @IBOutlet weak var graphView: ScrollableGraphView!
+    var startingYear = 2005
+    var endingYear = 2005
+    var ref: DatabaseReference! = Database.database().reference()
+    var mappingOfYearAndQuantity: [(Int, Int)] = []
+//    var mappingofYearAndQuantity : [Int: Int] = [:]
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 13
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return "\(2005 + row)"
+    }
+    
     func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
-        return 15.0
+        return (Double(mappingOfYearAndQuantity[pointIndex].1) / 10000.0)
     }
     
     func label(atIndex pointIndex: Int) -> String {
-        return "Sophiaism"
+        return "\(mappingOfYearAndQuantity[pointIndex].0)"
     }
     
     func numberOfPoints() -> Int {
-        return 5
+        return mappingOfYearAndQuantity.count
     }
     
+    @IBAction func startQueryingGraph(_ sender: UIButton) {
+        queryGraphInformation()
+    }
+    
+    var queries: [Any] = []
+    
+    func queryGraphInformation() {
+        self.mappingOfYearAndQuantity = []
+        for currentYear in startingYear..<endingYear + 1 {
+            let startFormattedString = "\(currentYear)/01/01 12:00:00 AM"
+            let endingFormattedString = "\(currentYear + 1)/01/01 12:00:00 AM"
+            
+            let query = ref.child("Entries")
+                .queryOrdered(byChild: "Created Date")
+                .queryStarting(atValue: startFormattedString)
+                .queryEnding(atValue: endingFormattedString)
+            print("starting and ending format strings are: \(startFormattedString), \(endingFormattedString)")
+            queries.append(query)
+            query.observe(.value) { (snapshot) in
+                if let value = snapshot.value as? NSDictionary {
+                    self.mappingOfYearAndQuantity.append((currentYear, value.count))
+                    if (self.mappingOfYearAndQuantity.count == self.endingYear - self.startingYear + 1) {
+                        DispatchQueue.main.async {
+                            self.graphView.reload()
+                        }
+                    }
 
-    @IBOutlet weak var graphView: ScrollableGraphView!
+                }
+            }
+
+
+        }
+        
+    }
+
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if (segmentedSelector.selectedSegmentIndex == 0) {
+            startingYear = 2005 + row
+        } else if (segmentedSelector.selectedSegmentIndex == 1) {
+            endingYear = 2005 + row
+        }
+    }
+    
+    @IBAction func yearSelectionChanged(_ sender: UISegmentedControl) {
+        let index = sender.selectedSegmentIndex
+        if (index == 0) {
+            yearPicker.selectRow(startingYear - 2005, inComponent: 0, animated: true)
+        } else if (index == 1) {
+            yearPicker.selectRow(endingYear - 2005, inComponent: 0, animated: true)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let frameRect = CGRect(x: 0, y: 0, width: 300, height: 200)
-//        let graphView = ScrollableGraphView(frame: frameRect, dataSource: self)
+        yearPicker.delegate = self
+        yearPicker.dataSource = self
         graphView.dataSource = self
         // Setup the line plot.
         let linePlot = LinePlot(identifier: "darkLine")

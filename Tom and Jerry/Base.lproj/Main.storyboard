@@ -332,47 +332,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="X5n-9e-foe">
-                                <rect key="frame" x="0.0" y="106" width="375" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="532071682.59105003">
-                                    <!--2017-11-11 05:41:22 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="datePickerItselfChanged:" destination="6Uo-Wa-jGX" eventType="valueChanged" id="vlK-EI-WQk"/>
-                                </connections>
-                            </datePicker>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="35x-gH-pcg">
-                                <rect key="frame" x="92" y="70" width="191" height="29"/>
+                                <rect key="frame" x="92" y="70" width="187" height="29"/>
                                 <segments>
-                                    <segment title="Starting Date"/>
-                                    <segment title="Ending Date"/>
+                                    <segment title="Starting Year"/>
+                                    <segment title="Ending Year"/>
                                 </segments>
                                 <connections>
-                                    <action selector="datePickerSegmentChanged:" destination="6Uo-Wa-jGX" eventType="valueChanged" id="GDb-zW-sZ2"/>
+                                    <action selector="yearSelectionChanged:" destination="jLH-QT-KwP" eventType="valueChanged" id="lYT-2a-eg8"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9w-8E-J4k">
-                                <rect key="frame" x="322" y="70" width="37" height="30"/>
+                                <rect key="frame" x="318" y="70" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="dismissDatePicker:" destination="6Uo-Wa-jGX" eventType="touchUpInside" id="e4J-Yh-1hL"/>
+                                    <action selector="startQueryingGraph:" destination="jLH-QT-KwP" eventType="touchUpInside" id="G5L-i1-gRp"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgP-XS-Jjm" customClass="ScrollableGraphView" customModule="ScrollableGraphView">
-                                <rect key="frame" x="0.0" y="322" width="375" height="490"/>
+                                <rect key="frame" x="0.0" y="346" width="375" height="466"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayg-b0-QtE">
+                                <rect key="frame" x="0.0" y="115" width="375" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="X5n-9e-foe" firstAttribute="top" secondItem="a9w-8E-J4k" secondAttribute="bottom" constant="6" id="8tj-dn-kWc"/>
+                            <constraint firstItem="Ayg-b0-QtE" firstAttribute="top" secondItem="a9w-8E-J4k" secondAttribute="bottom" constant="15" id="BnU-bS-8Hi"/>
                             <constraint firstItem="a9w-8E-J4k" firstAttribute="top" secondItem="5W4-vJ-zF0" secondAttribute="top" constant="26" id="Dhz-Vu-yWt"/>
-                            <constraint firstItem="X5n-9e-foe" firstAttribute="leading" secondItem="5W4-vJ-zF0" secondAttribute="leading" id="L9t-vb-Fo2"/>
                             <constraint firstItem="35x-gH-pcg" firstAttribute="leading" secondItem="5W4-vJ-zF0" secondAttribute="leading" constant="92" id="Lbk-fX-YMl"/>
-                            <constraint firstItem="X5n-9e-foe" firstAttribute="trailing" secondItem="5W4-vJ-zF0" secondAttribute="trailing" id="esj-np-FNH"/>
+                            <constraint firstItem="OgP-XS-Jjm" firstAttribute="top" secondItem="Ayg-b0-QtE" secondAttribute="bottom" constant="15" id="M6h-zH-Mw0"/>
+                            <constraint firstItem="Ayg-b0-QtE" firstAttribute="trailing" secondItem="5W4-vJ-zF0" secondAttribute="trailing" id="VjN-Cj-dVE"/>
                             <constraint firstAttribute="bottom" secondItem="OgP-XS-Jjm" secondAttribute="bottom" id="fvQ-yq-j3j"/>
+                            <constraint firstItem="Ayg-b0-QtE" firstAttribute="leading" secondItem="5W4-vJ-zF0" secondAttribute="leading" id="lV4-14-XkD"/>
                             <constraint firstItem="35x-gH-pcg" firstAttribute="top" secondItem="5W4-vJ-zF0" secondAttribute="top" constant="26" id="qrE-Hz-xOc"/>
-                            <constraint firstItem="OgP-XS-Jjm" firstAttribute="top" secondItem="X5n-9e-foe" secondAttribute="bottom" id="sWE-8P-cYi"/>
                             <constraint firstItem="OgP-XS-Jjm" firstAttribute="leading" secondItem="5W4-vJ-zF0" secondAttribute="leading" id="tg1-7n-i9Q"/>
                             <constraint firstItem="a9w-8E-J4k" firstAttribute="leading" secondItem="35x-gH-pcg" secondAttribute="trailing" constant="39" id="uLS-GP-k93"/>
                             <constraint firstItem="OgP-XS-Jjm" firstAttribute="trailing" secondItem="5W4-vJ-zF0" secondAttribute="trailing" id="wM9-jN-Cyf"/>
@@ -380,7 +375,9 @@
                         <viewLayoutGuide key="safeArea" id="5W4-vJ-zF0"/>
                     </view>
                     <connections>
-                        <outlet property="GraphView" destination="OgP-XS-Jjm" id="fW6-xe-xU6"/>
+                        <outlet property="graphView" destination="OgP-XS-Jjm" id="OMg-qS-eWO"/>
+                        <outlet property="segmentedSelector" destination="35x-gH-pcg" id="weB-HE-EoG"/>
+                        <outlet property="yearPicker" destination="Ayg-b0-QtE" id="2Gs-9N-CFD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLi-gO-1j8" userLabel="First Responder" sceneMemberID="firstResponder"/>
