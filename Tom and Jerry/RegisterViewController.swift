@@ -52,8 +52,15 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NewProfile.image = UIImage(named:"tom")!
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard as (UIViewController) -> () -> ()))
+        view.addGestureRecognizer(tap)
     }
 
+    override func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -71,3 +78,8 @@ class RegisterViewController: UIViewController {
     */
 
 }
+
+
+
+
+

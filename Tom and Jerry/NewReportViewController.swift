@@ -99,6 +99,8 @@ class NewReportViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard as (UIViewController) -> () -> ()))
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
     }

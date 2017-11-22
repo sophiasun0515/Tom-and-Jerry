@@ -19,6 +19,7 @@ class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPi
     var endingYear = 2005
     var ref: DatabaseReference! = Database.database().reference()
     var mappingOfYearAndQuantity: [(Int, Int)] = []
+    var quantityArr: [Double] = []
 //    var mappingofYearAndQuantity : [Int: Int] = [:]
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -40,6 +41,17 @@ class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPi
     func label(atIndex pointIndex: Int) -> String {
         return "\(mappingOfYearAndQuantity[pointIndex].0)"
     }
+    
+    func quantity(atIndex pointIndex: Int) {
+        quantityArr.append(Double(mappingOfYearAndQuantity[pointIndex].1) / 10000.0)
+    }
+    
+    
+    
+    
+    
+    
+    
     
     func numberOfPoints() -> Int {
         return mappingOfYearAndQuantity.count
@@ -133,7 +145,8 @@ class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPi
         
         referenceLines.positionType = .absolute
         // Reference lines will be shown at these values on the y-axis.
-        referenceLines.absolutePositions = [10, 20, 25, 30]
+        
+        referenceLines.absolutePositions = quantityArr
         referenceLines.includeMinMax = false
         
         referenceLines.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
