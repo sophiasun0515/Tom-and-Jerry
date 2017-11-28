@@ -15,11 +15,13 @@ class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPi
     @IBOutlet weak var segmentedSelector: UISegmentedControl!
     @IBOutlet weak var yearPicker: UIPickerView!
     @IBOutlet weak var graphView: ScrollableGraphView!
+    
     var startingYear = 2005
     var endingYear = 2005
     var ref: DatabaseReference! = Database.database().reference()
     var mappingOfYearAndQuantity: [(Int, Int)] = []
     var quantityArr: [Double] = []
+
 //    var mappingofYearAndQuantity : [Int: Int] = [:]
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -35,17 +37,17 @@ class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPi
     }
     
     func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
-        return (Double(mappingOfYearAndQuantity[pointIndex].1) / 10000.0)
+//        return (Double(mappingOfYearAndQuantity[pointIndex].1) / 10000.0)
+        return (Double(mappingOfYearAndQuantity[pointIndex].1))
     }
     
     func label(atIndex pointIndex: Int) -> String {
         return "\(mappingOfYearAndQuantity[pointIndex].0)"
     }
     
-    func quantity(atIndex pointIndex: Int) {
-        quantityArr.append(Double(mappingOfYearAndQuantity[pointIndex].1) / 10000.0)
-    }
-    
+//    func quantity(atIndex pointIndex: Int) {
+//        quantityArr.append(Double(mappingOfYearAndQuantity[pointIndex].1) / 10000.0)
+//    }
     
     
     
@@ -75,17 +77,22 @@ class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPi
                 .queryEnding(atValue: endingFormattedString)
             print("starting and ending format strings are: \(startFormattedString), \(endingFormattedString)")
             queries.append(query)
-            query.observe(.value) { (snapshot) in
+            
+            query.observeSingleEvent(of: .value, with: { (snapshot) in
                 if let value = snapshot.value as? NSDictionary {
                     self.mappingOfYearAndQuantity.append((currentYear, value.count))
+//                    self.quantityArr.append(Double(value.count) / 10000.0)
+                    self.quantityArr.append(Double(value.count))
+                    
+                    self.configureGraph()
                     if (self.mappingOfYearAndQuantity.count == self.endingYear - self.startingYear + 1) {
                         DispatchQueue.main.async {
                             self.graphView.reload()
                         }
                     }
-
+                    
                 }
-            }
+            })
 
 
         }
@@ -114,6 +121,10 @@ class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPi
         super.viewDidLoad()
         yearPicker.delegate = self
         yearPicker.dataSource = self
+
+    }
+    
+    func configureGraph() {
         graphView.dataSource = self
         // Setup the line plot.
         let linePlot = LinePlot(identifier: "darkLine")
@@ -165,8 +176,7 @@ class GraphViewController: UIViewController, ScrollableGraphViewDataSource, UIPi
         graphView.addReferenceLines(referenceLines: referenceLines)
         graphView.addPlot(plot: linePlot)
         graphView.addPlot(plot: dotPlot)
-        self.view.addSubview(graphView)
-
+//        self.view.addSubview(graphView)
     }
     
     
